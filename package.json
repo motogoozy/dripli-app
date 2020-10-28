@@ -2,6 +2,8 @@
   "name": "dripli-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Kyle Payne",
+  "license": "UNLICENSED",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
