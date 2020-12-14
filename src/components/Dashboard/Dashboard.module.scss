@@ -1,0 +1,152 @@
+@import '../../styles/globals.module.scss';
+@import '../../styles/colors.scss';
+
+.dashboard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  top: 0;
+  z-index: 4;
+
+  .companyTitleContainer {
+    height: 2.5rem;
+    width: auto;
+    min-width: 17rem;
+    padding: 0 2rem;
+    background-color: $main-purple;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 27px 27px;
+    box-shadow: 0px 3px 6px #0000004d;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}
+
+.main {
+  height: calc(100% - 5rem);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 4;
+  padding-bottom: 5rem;
+}
+
+.leftIndicatorContainer {
+  height: 100%;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.rowContainer {
+  height: 100%;
+  width: calc(100% - 4rem);
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.row {
+  height: 15%;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.row1 {
+  transform: rotate(-5deg);
+}
+
+.row2 {
+  padding-left: 1rem;
+  transform: rotate(-2.5deg);
+}
+
+.row3 {
+  padding-left: 1.5rem;
+}
+
+.row4 {
+  padding-left: 1rem;
+  transform: rotate(2.5deg);
+}
+
+.row5 {
+  transform: rotate(5deg);
+}
+
+.backgroundLayerContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: $support-contrast;
+}
+
+.backgroundLayer1,
+.backgroundLayer2,
+.backgroundLayer3 {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  box-shadow: 10px 3px 15px #00000014;
+}
+
+.backgroundLayer1 {
+  width: 86%;
+  background: white 0% 0% no-repeat padding-box;
+  z-index: 3;
+}
+
+.backgroundLayer2 {
+  width: 89%;
+  background: $level-2 0% 0% no-repeat padding-box;
+  z-index: 2;
+}
+
+.backgroundLayer3 {
+  width: 98%;
+  background: $level-2 0% 0% no-repeat padding-box;
+  z-index: 1;
+}
+
+.circleIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: $main-purple-muted;
+  margin: 6px;
+}
+
+.activeIndicator {
+  height: 12px;
+  width: 12px;
+  background-color: $main-purple-contrast;
+}

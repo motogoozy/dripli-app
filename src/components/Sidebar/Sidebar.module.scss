@@ -1,0 +1,22 @@
+@import '../../styles/globals.module.scss';
+@import '../../styles/colors.scss';
+
+.sidebar {
+  height: 100%;
+  width: $sidebar-width;
+  background-color: $main-purple;
+  border-radius: 0px 31px 31px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.logo {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: 0;
+}

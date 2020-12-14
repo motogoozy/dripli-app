@@ -1,0 +1,8 @@
+/* Variables */
+$sidebar-width: 4rem;
+
+.pageContent {
+  height: 100%;
+	width: calc(100% - #{$sidebar-width});
+	position: relative;
+}
