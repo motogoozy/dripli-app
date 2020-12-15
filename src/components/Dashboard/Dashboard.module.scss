@@ -2,8 +2,6 @@
 @import '../../styles/colors.scss';
 
 .dashboard {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -76,7 +74,7 @@
   background-color: white;
 }
 
-.rowContainer {
+.roadmapContainer {
   height: 100%;
   width: calc(100% - 4rem);
   display: flex;
@@ -87,7 +85,7 @@
   // overflow: hidden;
 }
 
-.row {
+.rowContainer {
   height: 15%;
   margin: 1rem 0;
 }

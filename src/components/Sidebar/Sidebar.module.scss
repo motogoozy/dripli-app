@@ -8,9 +8,18 @@
   border-radius: 0px 31px 31px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0.75rem;
+}
+
+.topContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem 1rem;
 }
 
 .logo {
@@ -18,5 +27,32 @@
   width: 1.5rem;
   border: 3px solid white;
   border-radius: 50%;
+  margin: 0;
+}
+
+.bottomContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.iconContainer {
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.iconLabel {
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: -0.3px;
   margin: 0;
 }
