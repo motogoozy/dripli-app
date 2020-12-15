@@ -18,25 +18,40 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  top: 0;
   z-index: 4;
+  position: relative;
+}
 
-  .companyTitleContainer {
-    height: 2.5rem;
-    width: auto;
-    min-width: 17rem;
-    padding: 0 2rem;
-    background-color: $main-purple;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 0px 27px 27px;
-    box-shadow: 0px 3px 6px #0000004d;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
+.companyTitleContainer {
+  height: 2.5rem;
+  width: auto;
+  min-width: 17rem;
+  padding: 0 2rem;
+  background-color: $main-purple;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 27px 27px;
+  box-shadow: 0px 3px 6px #0000004d;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.search {
+  position: absolute;
+  top: 16px;
+  left: 21rem;
+  width: 12rem;
+  height: 1.5rem;
+  margin: 0;
+  background-color: $support-contrast;
+  color: black;
+  border-radius: 15px;
+  padding-left: 1.5rem;
+  border: none;
+  outline: none;
 }
 
 .main {
@@ -64,40 +79,43 @@
 .rowContainer {
   height: 100%;
   width: calc(100% - 4rem);
-  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .row {
   height: 15%;
-  width: 100%;
   margin: 1rem 0;
 }
 
 .row1 {
+  width: 92%;
   transform: rotate(-5deg);
 }
 
 .row2 {
+  width: 93.5%;
   padding-left: 1rem;
   transform: rotate(-2.5deg);
 }
 
 .row3 {
-  padding-left: 1.5rem;
+  width: 94.5%;
+  padding-left: 1rem;
 }
 
 .row4 {
+  width: 93.5%;
   padding-left: 1rem;
   transform: rotate(2.5deg);
 }
 
 .row5 {
+  width: 92%;
   transform: rotate(5deg);
 }
 

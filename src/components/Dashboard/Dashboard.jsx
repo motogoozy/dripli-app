@@ -8,6 +8,8 @@ export default function Dashboard() {
     <div className={globalStyles.pageContent}>
       <div className={styles.dashboard}>
         <div className={styles.header}>
+          <input type='text' placeholder='Search' className={styles.search} />
+
           <div className={styles.companyTitleContainer}>Salt & Straw Creamery</div>
         </div>
 
@@ -26,19 +28,19 @@ export default function Dashboard() {
 
           <div className={styles.rowContainer}>
             <div className={`${styles.row} ${styles.row1}`}>
-              <CategoryRow />
+              <CategoryRow title='Defense' />
             </div>
             <div className={`${styles.row} ${styles.row2}`}>
-              <CategoryRow />
+              <CategoryRow title='Compliance' />
             </div>
             <div className={`${styles.row} ${styles.row3}`}>
-              <CategoryRow />
+              <CategoryRow title='Monitoring' isActive={true} />
             </div>
             <div className={`${styles.row} ${styles.row4}`}>
-              <CategoryRow />
+              <CategoryRow title='Governance' />
             </div>
             <div className={`${styles.row} ${styles.row5}`}>
-              <CategoryRow />
+              <CategoryRow title='Product' />
             </div>
           </div>
         </div>

@@ -2,7 +2,9 @@
 
 .app {
   height: 100vh;
+  min-height: 800px;
   width: 100vw;
+  min-width: 1200px;
   text-align: center;
   display: flex;
   flex-direction: row;
