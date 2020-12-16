@@ -40,7 +40,6 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
-  // overflow: hidden;
 }
 
 .rowContainer {
@@ -92,6 +91,8 @@
 .backgroundLayer2,
 .backgroundLayer3 {
   height: 130%;
+  min-height: 130%;
+  max-height: 130%;
   position: absolute;
   left: 0;
   box-shadow: 10px 3px 15px #00000014;
@@ -103,21 +104,75 @@
 }
 
 .backgroundLayer1 {
-  width: 89%;
   background: white 0% 0% no-repeat padding-box;
   z-index: 3;
 }
 
 .backgroundLayer2 {
-  width: 91%;
   background: $level-2 0% 0% no-repeat padding-box;
   z-index: 2;
 }
 
 .backgroundLayer3 {
-  width: 99%;
   background: $level-2 0% 0% no-repeat padding-box;
   z-index: 1;
+}
+
+.page1LayerWidths {
+  .backgroundLayer1 {
+    width: 89%;
+  }
+
+  .backgroundLayer2 {
+    width: 91%;
+  }
+
+  .backgroundLayer3 {
+    width: 99%;
+  }
+}
+
+.page2LayerWidths {
+  .backgroundLayer1 {
+    width: 20%;
+    max-width: 240px;
+    border-top-right-radius: 180% 120%;
+    border-bottom-right-radius: 180% 120%;
+  }
+
+  .backgroundLayer2 {
+    width: 91%;
+    background-color: white;
+  }
+
+  .backgroundLayer3 {
+    width: 99%;
+  }
+}
+
+.page3LayerWidths {
+  .backgroundLayer1,
+  .backgroundLayer2 {
+    border-top-right-radius: 180% 120%;
+    border-bottom-right-radius: 180% 120%;
+  }
+
+  .backgroundLayer1 {
+    width: 20%;
+    max-width: 240px;
+  }
+
+  .backgroundLayer2 {
+    width: 22%;
+    max-width: 275px;
+    border-top-right-radius: 180% 140%;
+    border-bottom-right-radius: 180% 140%;
+  }
+
+  .backgroundLayer3 {
+    width: 99%;
+    background-color: white;
+  }
 }
 
 .circleIndicator {
@@ -135,6 +190,7 @@
 .activeIndicator {
   height: 12px;
   width: 12px;
+  margin: 4px;
   background-color: $main-purple-contrast;
 
   &:hover {
@@ -149,4 +205,8 @@
   top: 0;
   right: 10px;
   z-index: 4;
+}
+
+.page3RowWidth {
+  width: 70%;
 }

@@ -27,9 +27,9 @@
 .centerContainer {
   flex: 1;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0 1rem;
 }
 
@@ -72,4 +72,12 @@
     right: 0;
     box-sizing: border-box;
   }
+}
+
+.pageIndicatorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }

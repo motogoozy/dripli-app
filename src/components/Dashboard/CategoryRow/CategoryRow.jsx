@@ -8,35 +8,40 @@ import { faChevronLeft, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function CategoryRow(props) {
   const [showDropdown, setShowDropdown] = useState(false);
+  const { isActive, title, currentPage } = props;
 
   let titleStyles = {
     [styles.categoryTitle]: true,
-    [styles.activeCategoryTitle]: props.isActive,
+    [styles.activeCategoryTitle]: isActive,
   };
   let lineStyles = {
     [styles.categoryLine]: true,
-    [styles.activeCategoryLine]: props.isActive,
+    [styles.activeCategoryLine]: isActive,
   };
   let itemContainerStyles = {
     [styles.categoryItemContainer]: true,
-    [styles.activeCategoryItemContainer]: props.isActive,
+    [styles.activeCategoryItemContainer]: isActive,
   };
 
   return (
     <div className={styles.categoryRow}>
       <div className={classnames(titleStyles)}>
-        {props.title}
-        {props.isActive && (
+        {title}
+        {isActive && (
           <div className={styles.arrow} onClick={() => setShowDropdown(!showDropdown)}>
             <FontAwesomeIcon icon={showDropdown ? faChevronDown : faChevronLeft} />
           </div>
         )}
       </div>
       <div className={classnames(itemContainerStyles)}>
-        <CategoryItem isActive={props.isActive} />
-        <CategoryItem isActive={props.isActive} />
-        <CategoryItem isActive={props.isActive} />
-        <CategoryItem isActive={props.isActive} />
+        <CategoryItem isActive={isActive} currentPage={currentPage} />
+        <CategoryItem isActive={isActive} currentPage={currentPage} />
+        <CategoryItem isActive={isActive} currentPage={currentPage} />
+        <CategoryItem
+          isActive={isActive}
+          currentPage={currentPage}
+          backgroundColor={currentPage < 3 && (isActive ? '#9c94b9' : '#f7f7f7')}
+        />
       </div>
 
       <div className={classnames(lineStyles)}></div>
