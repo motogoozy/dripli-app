@@ -1,5 +1,5 @@
-@import '../../styles/globals.module.scss';
-@import '../../styles/colors.scss';
+@import '../../../styles/globals.module.scss';
+@import '../../../styles/colors.scss';
 
 .categoryRow {
   height: 5rem;
@@ -60,5 +60,16 @@
 }
 
 .activeCategoryItemContainer {
-	padding-left: 21rem;
+  padding-left: 21rem;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  margin-right: 0.75rem;
+  font-weight: 300;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,0 +1,16 @@
+@import '../../styles/colors.scss';
+
+.exportTab {
+  height: 100%;
+	width: 100%;
+  background-color: $alert;
+	color: white;
+  border-radius: 0 0 100% 100%;
+  box-shadow: 0px 3px 6px #0000004d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	padding-bottom: 5px;
+	font-size: .85rem;
+}

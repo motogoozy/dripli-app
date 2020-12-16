@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './CategoryRow.module.scss';
 import CategoryItem from '../CategoryItem/CategoryItem';
 
 import classnames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function CategoryRow(props) {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   let titleStyles = {
     [styles.categoryTitle]: true,
     [styles.activeCategoryTitle]: props.isActive,
@@ -20,7 +24,14 @@ export default function CategoryRow(props) {
 
   return (
     <div className={styles.categoryRow}>
-      <div className={classnames(titleStyles)}>{props.title}</div>
+      <div className={classnames(titleStyles)}>
+        {props.title}
+        {props.isActive && (
+          <div className={styles.arrow} onClick={() => setShowDropdown(!showDropdown)}>
+            <FontAwesomeIcon icon={showDropdown ? faChevronDown : faChevronLeft} />
+          </div>
+        )}
+      </div>
       <div className={classnames(itemContainerStyles)}>
         <CategoryItem isActive={props.isActive} />
         <CategoryItem isActive={props.isActive} />

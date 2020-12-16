@@ -1,0 +1,75 @@
+@import '../../../styles/colors.scss';
+
+.header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 4;
+  position: relative;
+}
+
+.headerContainer {
+  height: 100%;
+  flex: 1.5;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.centerContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.companyTitleContainer {
+  height: 2.5rem;
+  width: auto;
+  min-width: 17rem;
+  max-width: 20rem;
+  padding: 0 2rem;
+  background-color: $main-purple;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 27px 27px;
+  box-shadow: 0px 3px 6px #0000004d;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.searchContainer {
+  height: 1.5rem;
+  width: 12rem;
+  position: relative;
+
+  input {
+    height: 100%;
+    width: 100%;
+    margin-bottom: -8px;
+    padding: 0;
+    background-color: $support-contrast;
+    color: black;
+    border-radius: 15px;
+    padding-left: 1.5rem;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+  }
+}
