@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dripli-app/static/css/main.08dae1f0.chunk.css",
+    "main.js": "/dripli-app/static/js/main.75234e4a.chunk.js",
+    "main.js.map": "/dripli-app/static/js/main.75234e4a.chunk.js.map",
+    "runtime-main.js": "/dripli-app/static/js/runtime-main.3994e94e.js",
+    "runtime-main.js.map": "/dripli-app/static/js/runtime-main.3994e94e.js.map",
+    "static/js/2.013010ed.chunk.js": "/dripli-app/static/js/2.013010ed.chunk.js",
+    "static/js/2.013010ed.chunk.js.map": "/dripli-app/static/js/2.013010ed.chunk.js.map",
+    "static/js/3.a7e6d63b.chunk.js": "/dripli-app/static/js/3.a7e6d63b.chunk.js",
+    "static/js/3.a7e6d63b.chunk.js.map": "/dripli-app/static/js/3.a7e6d63b.chunk.js.map",
+    "index.html": "/dripli-app/index.html",
+    "static/css/main.08dae1f0.chunk.css.map": "/dripli-app/static/css/main.08dae1f0.chunk.css.map",
+    "static/js/2.013010ed.chunk.js.LICENSE.txt": "/dripli-app/static/js/2.013010ed.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3994e94e.js",
+    "static/js/2.013010ed.chunk.js",
+    "static/css/main.08dae1f0.chunk.css",
+    "static/js/main.75234e4a.chunk.js"
+  ]
+}
