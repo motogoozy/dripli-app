@@ -11,9 +11,9 @@ export default function Dashboard() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const layerStyles = {
-    [styles.page1LayerWidths]: currentPage === 1,
-    [styles.page2LayerWidths]: currentPage === 2,
-    [styles.page3LayerWidths]: currentPage === 3,
+    [styles.page1Layers]: currentPage === 1,
+    [styles.page2Layers]: currentPage === 2,
+    [styles.page3Layers]: currentPage === 3,
   };
 
   return (

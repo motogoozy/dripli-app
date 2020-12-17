@@ -87,18 +87,11 @@
   align-items: center;
 }
 
-.backgroundLayer1,
-.backgroundLayer2,
-.backgroundLayer3 {
+.backgroundLayer {
   height: 130%;
-  min-height: 130%;
-  max-height: 130%;
   position: absolute;
   left: 0;
   box-shadow: 10px 3px 15px #00000014;
-}
-
-.backgroundLayer {
   border-top-right-radius: 20% 100%;
   border-bottom-right-radius: 20% 100%;
 }
@@ -118,7 +111,7 @@
   z-index: 1;
 }
 
-.page1LayerWidths {
+.page1Layers {
   .backgroundLayer1 {
     width: 89%;
   }
@@ -132,7 +125,7 @@
   }
 }
 
-.page2LayerWidths {
+.page2Layers {
   .backgroundLayer1 {
     width: 20%;
     max-width: 240px;
@@ -150,7 +143,7 @@
   }
 }
 
-.page3LayerWidths {
+.page3Layers {
   .backgroundLayer1,
   .backgroundLayer2 {
     border-top-right-radius: 180% 120%;
