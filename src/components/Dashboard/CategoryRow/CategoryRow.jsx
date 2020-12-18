@@ -10,6 +10,10 @@ export default function CategoryRow(props) {
   const [showDropdown, setShowDropdown] = useState(false);
   const { isActive, title, currentPage } = props;
 
+  let rowStyles = {
+    [styles.categoryRow]: true,
+    [styles.page3Row]: currentPage === 3,
+  };
   let titleStyles = {
     [styles.categoryTitle]: true,
     [styles.activeCategoryTitle]: isActive,
@@ -24,7 +28,7 @@ export default function CategoryRow(props) {
   };
 
   return (
-    <div className={styles.categoryRow}>
+    <div className={classnames(rowStyles)}>
       <div className={classnames(titleStyles)}>
         {title}
         {isActive && (
@@ -37,11 +41,13 @@ export default function CategoryRow(props) {
         <CategoryItem isActive={isActive} currentPage={currentPage} />
         <CategoryItem isActive={isActive} currentPage={currentPage} />
         <CategoryItem isActive={isActive} currentPage={currentPage} />
-        <CategoryItem
-          isActive={isActive}
-          currentPage={currentPage}
-          backgroundColor={currentPage < 3 && (isActive ? '#9c94b9' : '#f7f7f7')}
-        />
+        {currentPage !== 3 && (
+          <CategoryItem
+            isActive={isActive}
+            currentPage={currentPage}
+            backgroundColor={currentPage < 3 && (isActive ? '#9c94b9' : '#f7f7f7')}
+          />
+        )}
       </div>
 
       <div className={classnames(lineStyles)}></div>
